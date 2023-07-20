@@ -2,7 +2,14 @@
 <html>
 <head>
   <script>
-    window.location.href = `https://${require('./ip.html')}`;
+     fetch('./ip.html')
+      .then(response => response.text())
+      .then(data => {
+         window.location.href = `https://${data.trim()}`;
+      })
+      .catch(error => {
+        document.querySelector('p').textContent = 'Failed to redirect to homepage.';
+      });
   </script>
 </head>
 <body>
