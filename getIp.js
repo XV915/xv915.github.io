@@ -2,7 +2,7 @@ fetch('./ip.html')
   .then(response => response.text())
   .then(ip => {
     const homepageLink = document.getElementById('homepageLink');
-    homepageLink.href = ip.trim();
+    homepageLink.href = 'https://' + ip.trim();
     homepageLink.textContent = 'Go to XV915 Homepage';
   })
   .catch(error => {
