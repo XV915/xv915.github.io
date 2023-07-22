@@ -7,7 +7,8 @@
     "build": "react-scripts build",
     "test": "jest -u --forceExit --coverage --detectOpenHandles",
     "watch": "jest -u --forceExit --detectOpenHandles --watchAll",
-    "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix"
+    "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
+    "actions:test": "jest -u --forceExit"
   },
   "dependencies": {
     "react": "18.2.0",
