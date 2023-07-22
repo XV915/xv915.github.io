@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "web": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build; node updateIndexFromBuildDir.js",
     "test": "jest -u --forceExit --coverage --detectOpenHandles",
     "watch": "jest -u --forceExit --detectOpenHandles --watchAll",
     "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
