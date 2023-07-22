@@ -1,13 +1,9 @@
-import {AppRegistry, Platform} from 'react-native';
-import App from './app';
+import { AppRegistry, Platform } from "react-native";
+import App from "./App";
 
-// export function App(): ReactElement {
-//   return <Navigation />;
-// }
-
-AppRegistry.registerComponent('example', () => App);
-if (Platform.OS === 'web') {
-  AppRegistry.runApplication('example', {
-    rootTag: document.getElementById('root'),
+AppRegistry.registerComponent("xv915_homepage", () => App);
+if (Platform.OS === "web") {
+  AppRegistry.runApplication("xv915_homepage", {
+    rootTag: document.getElementById("root"),
   });
 }
